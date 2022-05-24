@@ -1,0 +1,30 @@
+.add-option {
+  display: flex;
+  padding: $m-size;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  &-error {
+    color: $off-white;
+    font-style: italic;
+    margin: $m-size 0 0 0;
+    padding: 0 $m-size;
+  }
+
+  &__input {
+    background: $dark-blue;
+    border: none;
+    border-bottom: 0.3rem solid darken($color: $dark-blue, $amount: 10%);
+    color: $off-white;
+    flex-grow: 1;
+    margin: 0 $s-size 0 0;
+    padding: $s-size;
+
+    @include respond(phone) {
+      margin: 0 0 $s-size 0 ;
+    }
+  }
+}
+

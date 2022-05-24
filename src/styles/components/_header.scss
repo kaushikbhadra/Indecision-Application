@@ -1,0 +1,26 @@
+.header {
+  background: $off-black;
+  color: #fff;
+  margin-bottom: $xl-size;
+  padding: $m-size 0;
+
+  @include respond(phone) {
+    margin-bottom: $m-size;
+  }
+
+  &__title {
+    font-size: $l-size;
+    margin: 0;
+    @include respond(phone) {
+      font-size: $m-size;
+    }
+  }
+  &__subtitle {
+    color: $off-white;
+    font-size: $m-size;
+    font-weight: 500;
+    @include respond(phone) {
+      font-size: $s-size;
+    }
+  }
+}

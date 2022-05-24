@@ -1,0 +1,33 @@
+.big-button {
+  background: $purpal;
+  border: none;
+  border-bottom: 0.6rem solid darken($color: $purpal, $amount: 10%);
+  color: #fff;
+  font-weight: bold;
+  font-size: $l-size;
+  margin-bottom: $xl-size;
+  padding: 2rem 0;
+  width: -webkit-fill-available;
+  @include respond(phone) {
+    font-size: $m-size;
+    margin-bottom: $m-size;
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.small-button {
+  background: $purpal;
+  border: none;
+  border-bottom: 0.3rem solid darken($color: $purpal, $amount: 10%);
+  color: #fff;
+  font-weight: 500;
+  padding: $s-size;
+  &--link {
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+  }
+}
